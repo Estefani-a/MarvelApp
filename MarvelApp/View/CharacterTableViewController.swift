@@ -29,9 +29,6 @@ class CharacterTableViewController: UITableViewController {
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar.barTintColor = .red
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        
-        //navigationController?.navigationBar.backItem?.title = "" //revisar
-        
 
     }
     

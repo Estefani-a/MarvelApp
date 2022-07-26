@@ -16,13 +16,14 @@ class CharactersDetailViewController: UIViewController {
             guard let characterImageUrl = character.thumbnail.path else { return }
             let thumbnailExtension = character.thumbnail.thumbnailExtension.rawValue
             
-            characterImg?.loadImage(urlString: characterImageUrl + "." + thumbnailExtension)
+            characterImg.loadImage(urlString: characterImageUrl + "." + thumbnailExtension)
         }
     }
     
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
-    @IBOutlet weak var characterImg: ImageViewCache?
+    @IBOutlet weak var characterImg: ImageViewCache!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +33,8 @@ class CharactersDetailViewController: UIViewController {
     func setUpView(){
         lblName.text = character?.name
         lblDescription.text = character?.description
+        
     }
-    
     
     private func setupNavUI() {
         navigationController?.navigationBar.isHidden = false

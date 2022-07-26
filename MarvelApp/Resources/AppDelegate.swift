@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        //Solo habilitar si es necesario
         window = UIWindow(frame: UIScreen.main.bounds)
         //let mainViewController = MainViewController(collectionViewLayout: UICollectionViewFlowLayout())
         //let characterNavController = UINavigationController(rootViewController: mainViewController)
