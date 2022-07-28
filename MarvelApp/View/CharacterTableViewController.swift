@@ -11,6 +11,7 @@ class CharacterTableViewController: UITableViewController {
     
     var characters = [Character]()
     let cellIdentifier = "Cell"
+    var character: Character?
         
     override func viewDidLoad() {
         super.viewDidLoad()
