@@ -9,11 +9,7 @@ import UIKit
 
 class CharactersDetailViewController: UIViewController {
     
-    var character: Character? {
-        didSet {
-            guard let character = character else { return }
-        }
-    }
+    var character: Character?
     
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
